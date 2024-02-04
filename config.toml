@@ -1,0 +1,66 @@
+## Basic Configuration
+
+baseurl = "https://kaapiandcode.github.io/"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Panjim Goa"
+title = "Panjim Goa"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+# disqusShortname = "discusShortname" # Enable if you want to use Disqus
+# googleAnalytics = "UA-XXXXXXXX-X" # Enable if you want to use Google Analytics
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "APEIRON"
+intro = "a Multimodal Drone Dataset bridging Perception and Network Data"
+description = "Nunzio Barone, Walter Brescia, Saverio Mascolo, Luca De Cicco"
+#authorimage = "headshot.png"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "c3lab/Apeiron"
+youtube = "<channelid>"
+
+## Extras
+[params.extra]
+copyright = "© 2024. C3LAB - Politecnico di Bari"
+poweredby = true
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = true
+
+## Main Menu
+#[[menu.main]]
+#name = "posts"
+#weight = 100
+#identifier = "posts"
+#url = "posts/"
+#[[menu.main]]
+#name = "about"
+#identifier = "about"
+#weight = 200
+#url = "about/"
+#[[menu.main]]
+#name = "projects"
+#identifier = "projects"
+#weight = 300
+#url = "projects/"
+
+
