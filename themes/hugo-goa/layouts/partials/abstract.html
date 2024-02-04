@@ -1,0 +1,5 @@
+<section id="info-pane" class="text-center info">
+  {{ with .Site.Params.abstract }}
+  <h6>{{ . | markdownify }}</h6>
+  {{ end }}
+</section>
