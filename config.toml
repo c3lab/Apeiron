@@ -14,6 +14,8 @@ title = "APEIRON"
 
 theme = "hugo-goa"
 
+
+
 ## Hugo Built-in Features
 # disqusShortname = "discusShortname" # Enable if you want to use Disqus
 # googleAnalytics = "UA-XXXXXXXX-X" # Enable if you want to use Google Analytics
@@ -26,6 +28,8 @@ intro = "a Multimodal Drone Dataset bridging Perception and Network Data"
 description = "Nunzio Barone, Walter Brescia, Saverio Mascolo, Luca De Cicco"
 #authorimage = "headshot.png"
 dateformat = "Jan 2, 2006"
+abstract = "Unmanned Aerial Vehicles (UAVs), commonly denoted as drones, are being increasingly adopted as platforms to enable applications such as surveillance, disaster response, environmental monitoring, live drone broadcasting, and Internet-of-Drones (IoD). In this context, drone systems are required to carry out tasks autonomously in potentially unknown and challenging environments. As such, deep learning algorithms are widely adopted to implement efficient perception from sensors, making the availability of comprehensive datasets capturing real-world environments important. In this work, we introduce **APEIRON**, a rich multimodal aerial dataset that simultaneously collects perception data from a stereocamera and an event based camera sensor, along with measurements of wireless network links obtained using an LTE module. The assembled dataset consists of both perception and network data, making it suitable for typical perception or communication applications, as well as cross-disciplinary applications that require both types of data. We believe that this dataset will help promoting multidisciplinary research at the intersection of multimedia systems, computer networks, and robotics fields."
+
 
 ## Site Meta Settings
 [params.meta]
@@ -45,6 +49,8 @@ highlightjs = true
 socialmarkup = true
 toc = true
 displayrssicon = true
+
+
 
 ## Main Menu
 #[[menu.main]]
