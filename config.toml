@@ -44,7 +44,7 @@ youtube = "<channelid>"
 ## Extras
 [params.extra]
 copyright = "© 2024. C3LAB - Politecnico di Bari"
-poweredby = true
+poweredby = false
 highlightjs = true
 socialmarkup = true
 toc = true
