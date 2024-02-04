@@ -1,6 +1,6 @@
 ## Basic Configuration
 
-baseurl = "https://kaapiandcode.github.io/"
+baseurl = "https://c3lab.github.io/Apeiron/"
 builddrafts = false
 canonifyurls = false
 languageCode = "en-US"
@@ -9,8 +9,8 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
-author = "Panjim Goa"
-title = "Panjim Goa"
+author = "c3lab"
+title = "APEIRON"
 
 theme = "hugo-goa"
 
