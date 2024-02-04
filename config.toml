@@ -48,7 +48,7 @@ poweredby = true
 highlightjs = true
 socialmarkup = true
 toc = true
-displayrssicon = true
+displayrssicon = false
 
 
 
