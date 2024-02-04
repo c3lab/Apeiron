@@ -1,7 +1,7 @@
 <header class="text-center header">
   {{ with .Site.Params.authorimage }}
   {{ $image := resources.Get (printf "images/%s" .) }}
-  <img src="{{ $image.Permalink }}" alt="Author Image" class="img-fluid rounded-circle mx-auto d-block headshot">
+  <img src="{{ $image.Permalink }}" alt="Author Image" width="60%" class="img-fluid  mx-auto d-block">
   {{ end }}
 
   <h1 class="author mt-3">{{ .Site.Params.author }}</h1>
