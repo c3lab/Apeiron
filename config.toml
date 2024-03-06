@@ -19,7 +19,7 @@ theme = "hugo-goa"
 ## Hugo Built-in Features
 # disqusShortname = "discusShortname" # Enable if you want to use Disqus
 # googleAnalytics = "UA-XXXXXXXX-X" # Enable if you want to use Google Analytics
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 ## Site Settings
 [params]
@@ -29,6 +29,7 @@ description = "Nunzio Barone, Walter Brescia, Saverio Mascolo, Luca De Cicco"
 authorimage = "apeiron.png"
 dateformat = "Jan 2, 2006"
 abstract = "Unmanned Aerial Vehicles (UAVs), commonly denoted as drones, are being increasingly adopted as platforms to enable applications such as surveillance, disaster response, environmental monitoring, live drone broadcasting, and Internet-of-Drones (IoD). In this context, drone systems are required to carry out tasks autonomously in potentially unknown and challenging environments. As such, deep learning algorithms are widely adopted to implement efficient perception from sensors, making the availability of comprehensive datasets capturing real-world environments important. In this work, we introduce **APEIRON**, a rich multimodal aerial dataset that simultaneously collects perception data from a stereocamera and an event based camera sensor, along with measurements of wireless network links obtained using an LTE module. The assembled dataset consists of both perception and network data, making it suitable for typical perception or communication applications, as well as cross-disciplinary applications that require both types of data. We believe that this dataset will help promoting multidisciplinary research at the intersection of multimedia systems, computer networks, and robotics fields."
+custom_css = ["css/main.css", "css/custom.css", "plugins/bootstrap/bootstrap-table.css"]
 
 
 ## Site Meta Settings
@@ -49,7 +50,6 @@ highlightjs = true
 socialmarkup = true
 toc = true
 displayrssicon = false
-enableMainPageContent=false
 
 ## Main Menu
 #[[menu.main]]
@@ -68,4 +68,58 @@ enableMainPageContent=false
 #weight = 300
 #url = "projects/"
 
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'monokai'
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 

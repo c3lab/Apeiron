@@ -1,11 +1,31 @@
 
-{{ if site.Params.extra.enableMainPageContent }}
-    {{ range (where site.RegularPages "Type" "test") }}
-    <center>
-        <h2>{{ .Title }}</h2>
-        <iframe width="720" height="480" 
-            src="{{.Params.video}}" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </center>
+<!-- Table of available data -->
+</div>
+
+{{ range $post :=  site.RegularPages }}
+    {{ if eq $post.Params.enabled true }}
+
+        {{ if eq $post.Params.type "post" }}
+        <center> 
+            <br>
+            <h2> {{.Title}} </h2>
+            <div style="width: 100%;">
+                {{ .Content }}
+            </div>
+        </center>
+        {{ end }}
+
+        {{ if eq $post.Params.type "video" }}
+        <center> 
+            <br>
+            <h2>{{ .Title }}</h2>
+            <iframe width="720" height="480" 
+                src="{{.Params.video}}" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </center>
+        {{ end }}
     {{ end }}
 {{ end }}
+
+<div class="container my-auto">
