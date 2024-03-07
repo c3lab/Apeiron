@@ -2,8 +2,8 @@
 title = "APEIRON Statistics"
 date = 2024-02-01T04:55:54+05:30
 draft = false
-type = "post"
-enabled = true
+type = "table"
+enabled = false
 +++
 
 
@@ -32,8 +32,6 @@ enabled = true
         <th>Average <br> RTT [ms]</th>
         <th>Direction</th>
         <th>PX4 Logs' URL</th>
-    </tr>
-    <tr>
     </tr>
     <tr>
         <td>IND-1</td>

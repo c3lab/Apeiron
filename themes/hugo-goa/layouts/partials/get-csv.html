@@ -1,0 +1,42 @@
+
+<br>
+
+<center> 
+<h2>APEIRON Statistics</h2>
+<br>
+<div style="width: 100%;">
+
+<table style="width: 1275px; text-align: center; ">
+    {{ $url := "/csv/data_statistics.csv" }}
+    {{ $sep := "," }}
+    {{ range $i, $r := getCSV $sep $url }}
+
+        {{ if eq $i 0 }}
+
+            <tr style="border-bottom:1pt solid black;">
+            {{ range $r }}
+                <th style="width:140px;">{{ . }}</th>
+            {{ end }}
+            </tr>
+
+        {{ else }}
+
+            <tr>
+            {{ range $x := $r }}
+                <td>
+                {{if strings.Contains $x "http" }}
+                {{ $x := cast.ToString $x }}
+                    <u><i><a href='{{ $x | safeURL}}' target="_blank">url</a></i></u>
+                {{ else }}
+                    {{ . }}
+                {{ end }}
+                </td>
+            {{ end }}
+            </tr>
+
+        {{end}}
+
+    {{ end }}
+</table>
+</div>
+</center> 
