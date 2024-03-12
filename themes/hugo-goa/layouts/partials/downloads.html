@@ -27,7 +27,7 @@
     td{padding: 5px;}
     a:link{text-decoration: underline; font-style: italic; }
 </style>
-<table style="width: 800px; text-align: center; ">
+<table style="width: 900px; text-align: center; ">
     {{ range $run := $data }}
     <tr>
             <th style="padding: 15px;" colspan="2">{{ index (split $run.run "_") 0 }}</th>
@@ -87,7 +87,7 @@
                 </tr>
                 
                 <tr>
-                    <td colspan="2">
+                    <td colspan="4">
                         <a href="{{ print $PREFIX $run.run "/" $run.px4logs_csv }}"> PX4 CSV Logs </a>
                     </td>
                 </tr>
