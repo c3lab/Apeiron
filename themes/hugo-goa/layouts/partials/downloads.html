@@ -9,14 +9,31 @@
 {{ $PREFIX := "https://c3lab.poliba.it/downloads/apeiron/dataset/" }}
 {{ $data := site.Data.metadata }}
 {{ $filters := slice "tcp" "avi" "svo" "zip" }}
-<style> td{padding: 5px;} a:link{text-decoration: underline; font-style: italic; }</style>
-<table style="width: 60%; text-align: center;">
+
+<div style="overflow: scroll;">
+<style>
+    html {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: #FFFFFF;
+    }
+    td{padding: 5px;}
+    a:link{text-decoration: underline; font-style: italic; }
+</style>
+<table style="width: 800px; text-align: center; ">
     {{ range $run := $data }}
     <tr>
             <th style="padding: 15px;" colspan="2">{{ index (split $run.run "_") 0 }}</th>
     </tr>
     <tr>
-        <td style="width: 25;">
+        <td style="width: 25%;">
             <table style="table-layout: fixed; width: 100%; text-align: left; ">
                 <tr>
                     <td> <b> RGB-D Data </b> </td>
@@ -79,5 +96,6 @@
     </tr>
     {{ end }}
 </table>
+</div>
 </div>
 </center> 

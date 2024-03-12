@@ -4,9 +4,23 @@
 <center> 
 <h2>APEIRON Statistics</h2>
 <br>
-<div style="width: 100%;">
+<style>
+    html {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: #FFFFFF;
+    }
+</style>
+<div style="overflow: scroll;">
 
-<table style="width: 80%; text-align: center; ">
+<table style="width: 1300px; text-align: center; ">
     {{ $url := "/csv/data_statistics.csv" }}
     {{ $sep := "," }}
     {{ range $i, $r := getCSV $sep $url }}
