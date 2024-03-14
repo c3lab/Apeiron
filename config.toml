@@ -34,7 +34,7 @@ custom_css = ["css/main.css", "css/custom.css"]
 
 ## Site Meta Settings
 [params.meta]
-description = "Simple minimalist theme"
+description = "A Multimodal Drone Dataset bridging Perception and Network Data"
 keywords = "minimalist,blog,goa,hugo,developer"
 
 ## Social Accounts
