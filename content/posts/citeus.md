@@ -19,7 +19,7 @@ type = "citeus"
         url = {https://doi.org/10.1145/3625468.3652186}, <br>
         doi = {10.1145/3625468.3652186}, <br>
         booktitle = {Proceedings of the 15th ACM Multimedia Systems Conference}, <br>
-        keywords = {mmWave radar, sparse point cloud, denoising, dataset}, <br>
+        keywords = {Open Dataset, UAV, Event camera, Network traces, Stereocamera}, <br>
         location = {Bari, Italy}, <br>
         series = {MMSys '24} <br>
         </div>
