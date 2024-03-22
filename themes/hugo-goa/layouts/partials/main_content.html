@@ -7,6 +7,25 @@
             width: 0;  /* Remove scrollbar space */
         } 
     }
+
+    @media (min-width: 991px) {
+        .video {
+            width:  720px;
+            height: 480px;
+        }
+    }
+    @media (max-width: 991px) {
+        .video {
+            width:  560px;
+            height: 315px;
+        }
+    }
+    @media (max-width: 776px) {
+        .video {
+            width:  90%;
+            height: 220px;
+        }
+    }
 </style>
 
 {{ range $post :=  site.RegularPages }}
@@ -26,8 +45,8 @@
         <center> 
             <br>
             <h3>{{ .Title }}</h3>
-            <iframe width="720" height="480" 
-                src="{{.Params.video}}" title="YouTube video player" frameborder="0" 
+            <iframe class="video"
+                src="{{.Params.video}}" title="APEIRON Demo" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </center>
