@@ -1,0 +1,18 @@
+FROM stereolabs/zed:4.0-gl-devel-cuda11.4-ubuntu20.04 
+
+
+RUN apt update -y
+RUN apt install build-essential cmake -y
+RUN apt install libopencv-dev -y
+
+RUN apt update && apt upgrade -y
+RUN python3 -m pip install cython numpy opencv-python pyopengl requests
+RUN DEBIAN_FRONTEND=noninteractive apt install python3-opencv -y
+RUN pip3 install --upgrade pip
+
+RUN cd /usr/local/zed && python3 get_python_api.py
+
+# install pandas
+RUN pip3 install pandas
+# install bc for bash calculator
+RUN apt install bc
