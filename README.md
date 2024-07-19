@@ -18,7 +18,8 @@ Each run contains different files related to different sensors/acquisition devic
 - **zed2i*.svo:** stereocamera recordings with UNIX timestamp
 - **log_*.ulg:** flight log, containing all the data captured by PixHawk’s sensors, such as GPS data, accelerometer, magnetometer, control inputs for the motors etc;
 - **tcp-internals*.log:** output of ss (socket statistics) 
-- **tcpdump-*.pcap:** packets capture
+- **tcpdump-*.pcap:
+** packets capture
 - **run.txt:** file containing meta data of the run (currently just run name)
 - **exported_videos:** stereo camera videos exported from SVO file
     - RGB_left.avi
@@ -69,7 +70,7 @@ this script will compute visual inertial odometry using zed sdk tracking feature
 ## Jupyter Notebooks
 
 In the `notebooks` folder you can find two notebooks:
-- **GPS_VIO.ipynb:** Shows how to use zed_pose track results and px4 logs to compare the pose estimation **NOTE:**it is required to compute the zed2i visual inertial odometry tracking(check previous sections of this document).
+- **GPS_VIO.ipynb:** Shows how to use zed_pose track results and px4 logs to compare the pose estimation **NOTE:** it is required to compute the zed2i visual inertial odometry tracking(check previous sections of this document).
 - **post-processBW.ipynb:** Shows how to use the px4 position logs and socket statistics data to create a heatmap of the bandwidth.
 
 ## To Do
