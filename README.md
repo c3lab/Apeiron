@@ -73,7 +73,4 @@ In the `notebooks` folder you can find two notebooks:
 - **GPS_VIO.ipynb:** Shows how to use zed_pose track results and px4 logs to compare the pose estimation **NOTE:** it is required to compute the zed2i visual inertial odometry tracking(check previous sections of this document).
 - **post-processBW.ipynb:** Shows how to use the px4 position logs and socket statistics data to create a heatmap of the bandwidth.
 
-## To Do
-- provide a json file in each run with useful metadata
-- document the **apeiron** python module used in the notebooks
 
